@@ -19,6 +19,19 @@ repositories {
 }
 
 dependencies {
+
+	implementation("org.springframework.data:spring-data-rest-hal-browser")
+	annotationProcessor("com.querydsl:querydsl-apt:4.2.0:jpa")
+
+	
+
+	implementation("com.querydsl:querydsl-jpa:4.2.0")
+	implementation("com.querydsl:querydsl-core:4.2.0")
+	implementation("com.querydsl:querydsl-sql:4.2.0")
+	implementation("com.querydsl:querydsl-sql-codegen:4.2.0")
+	implementation("com.querydsl:querydsl-sql-spring:4.2.0")
+	
+	
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-mail'
 	implementation 'org.springframework.boot:spring-boot-starter-security'
