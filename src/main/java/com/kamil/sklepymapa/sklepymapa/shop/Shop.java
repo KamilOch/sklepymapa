@@ -13,7 +13,8 @@ import javax.persistence.*;
 @Builder
 @Data
 @Entity
-@SequenceGenerator(name = "SHOP_SEQ", sequenceName = "shop_id_seq", allocationSize = 1)
+@Table(name ="shops")
+@SequenceGenerator(name = "SHOP_SEQ", sequenceName = "shops_id_seq", allocationSize = 1)
 public class Shop {
 
     @Id

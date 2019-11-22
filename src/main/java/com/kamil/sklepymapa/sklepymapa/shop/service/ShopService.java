@@ -1,5 +1,6 @@
 package com.kamil.sklepymapa.sklepymapa.shop.service;
 
+
 import com.kamil.sklepymapa.sklepymapa.shop.Shop;
 import com.kamil.sklepymapa.sklepymapa.shop.dto.ShopDTO;
 import com.kamil.sklepymapa.sklepymapa.shop.repository.ShopRepository;
