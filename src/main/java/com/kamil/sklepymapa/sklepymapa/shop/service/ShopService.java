@@ -38,7 +38,7 @@ public class ShopService {
 
     }
 
-    public List<Shop> getAllSgops() {
+    public List<Shop> getAllShops() {
         return repository.findAll();
     }
 }

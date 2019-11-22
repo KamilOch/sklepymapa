@@ -28,14 +28,30 @@ public class ShopController {
     }
 
     @DeleteMapping("/custom/shops/delete/{shopId}")
-    public void deleteShop (@RequestParam("shopId") int shopId ) throws ChangeSetPersister.NotFoundException {
+    public void deleteShop(@RequestParam("shopId") int shopId) throws ChangeSetPersister.NotFoundException {
         shopService.deleteShop(shopId);
     }
 
     @PostMapping("/custom/shops/all")
-    public List<Shop> getAllShops (){
-        return shopService.getAllSgops();
+    public List<Shop> getAllShops() {
+        return shopService.getAllShops();
     }
+
+
+//    @RequestMapping("/admin")
+//    public String admin(
+//            Model model
+//    ) {
+//
+//        return "admin";
+//    }
+//
+//    @RequestMapping("/user")
+//    public String user(
+//            Model model
+//    ) {
+//        return "user";
+//    }
 
 
 }
