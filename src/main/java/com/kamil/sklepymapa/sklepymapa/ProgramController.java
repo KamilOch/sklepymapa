@@ -1,4 +1,4 @@
-package com.kamil.sklepymapa;
+package com.kamil.sklepymapa.sklepymapa;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
