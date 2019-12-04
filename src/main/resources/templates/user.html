@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8"/>
     <title>Lista dostepnych sklepow</title>
@@ -8,8 +8,18 @@
 
 <h1>Lista dostępnch sklepów</h1>
 <br/>
-<form action="/custom/shops/all">
+<form action="/shops">
 </form>
+
+<ul>
+    <li th:each="sklep : ${sklep}">
+
+    <label th:for="${sklep}" th:text="${sklep}"></label>
+
+    </li>
+
+
+</ul>
 
 </body>
 </html>
